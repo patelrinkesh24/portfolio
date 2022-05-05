@@ -1,6 +1,5 @@
-Thanks for downloading this template!
+Thanks for checking my portfolio!
 
-Template Name: iproject
-Template URL: https://bootstrapmade.com/iproject-bootstrap-project-websites-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Project Name: my portfolio
+Website URL: https://patelrinkesh24.github.io/portfolio/
+Author: Rinkesh Patel
