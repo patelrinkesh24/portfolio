@@ -1,9 +1,3 @@
-/**
-* Template Name: iproject - v3.7.0
-* Template URL: https://bootstrapmade.com/iproject-bootstrap-project-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 (function() {
   "use strict";
 
