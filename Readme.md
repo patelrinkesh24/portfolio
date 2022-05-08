@@ -3,6 +3,8 @@ This Portfolio website was build using HTML, CSS, JavaScript, Bootstrap and cert
 
 <a href="https://patelrinkesh24.github.io/portfolio/" target="_blank">**Visit Now** 🚀</a>
 
-Project Name: my portfolio
+Project Name: my portfolio 
+
 Website URL: https://patelrinkesh24.github.io/portfolio/
+
 Author: Rinkesh Patel
