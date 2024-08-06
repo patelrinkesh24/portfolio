@@ -581,7 +581,59 @@ section {
 .projects .project-description p {
   padding: 0;
 }
+/* -------------------------------------------------------------
+# Skills
+------------------------------------------------------------- */
+.skills .skill-category {
+  height: 100%;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
+}
 
+.skills .skill-category:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.skills .skill-category h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.skills .skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills .skill-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.skills .skill-item i {
+  margin-right: 8px;
+}
+
+.skills .skill-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Background colors for different skill categories */
+.bg-web { background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); }
+.bg-programming { background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%); }
+.bg-data-science { background: linear-gradient(135deg, #184e68 0%, #57ca85 100%); }
+.bg-database { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+.bg-app-dev { background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%); }
+.bg-tools { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);  }
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
