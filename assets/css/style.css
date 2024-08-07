@@ -246,7 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .section-bg {
@@ -634,6 +634,152 @@ section {
 .bg-database { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
 .bg-app-dev { background: linear-gradient(135deg, #5ee7df 0%, #b490ca 100%); }
 .bg-tools { background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);  }
+
+/* ----------------------------
+Education and Experience
+---------------------------- */
+
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.education-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.education-card-body {
+  padding: 25px;
+}
+
+.education-year {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.education-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #149ddd;
+  margin-bottom: 10px;
+}
+
+.education-school {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.education-gpa {
+  font-size: 14px;
+  color: #28a745;
+  font-weight: 600;
+}
+
+/*----Experience----*/
+.experience-card {
+  perspective: 1000px; /* Add perspective for 3D effect */
+}
+
+.experience-card-inner {
+  position: relative;
+  width: 100%;
+  height: 300px; /* Set a fixed height for uniformity */
+  transition: transform 0.6s;
+  transform-style: preserve-3d; /* Enable 3D effect */
+}
+
+.experience-card:hover .experience-card-inner {
+  transform: rotateY(180deg); /* Flip effect on hover */
+}
+
+.experience-card-front,
+.experience-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Hide the back face */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-card-front {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.experience-card-back {
+  background: #149ddd;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  transform: rotateY(180deg); /* Rotate back face */
+}
+/*----------*/
+
+.info-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-columns .column {
+  width: 48%;
+}
+
+.info-columns h3 {
+  color: var(--default-color);
+  margin-bottom: 15px;
+}
+
+.info-columns ul {
+  padding-left: 20px;
+}
+
+.info-columns a {
+  color: #149ddd;
+  text-decoration: none;
+}
+
+.info-columns a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  .info-columns {
+    flex-direction: column;
+  }
+  
+  .info-columns .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
